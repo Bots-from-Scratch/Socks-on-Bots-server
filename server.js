@@ -2,7 +2,7 @@ const app = require("express")();
 const http = require("http").Server(app);
 const io = require("socket.io")(http,{
     cors: {
-        origin: ["https://socksonbots.de", "https://vueonbots.onrender.com"]
+        origin: [ "https://vueonbots.onrender.com:*","https://socksonbots.de"]
     }
 });
 // const path = require("path");
